@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu - Chez Brim</title>
+
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+
+      header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      h1 {
+        margin: 0;
+      }
+
+      .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+      }
+
+      .menu-category {
+        margin-bottom: 40px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+      }
+
+      .menu-item {
+        display: flex;
+        background-color: white;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .menu-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+      }
+
+      .item-details {
+        padding: 15px;
+        flex: 1;
+      }
+
+      .item-details h3 {
+        font-size: 20px;
+        margin: 0;
+        color: #333;
+      }
+
+      .item-details p {
+        margin: 10px 0;
+        color: #666;
+      }
+
+      .price {
+        font-weight: bold;
+        color: #333;
+      }
+
+      button {
+        background-color: #f09c42;
+        border: none;
+        color: white;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #e08e34;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Menu Chez Brim</h1>
+    </header>
+
+    <section class="menu">
+      <div class="menu-category">
+        <h2>Plats principaux</h2>
+        <div class="menu-item">
+          <img
+            src="images/2db5f585-d039-440b-ab24-ad3b69f0ca45.jpeg"
+            alt="Attiéké"
+          />
+          <div class="item-details">
+            <h3>Attiéké</h3>
+            <p>Attiéké accompagné de poisson ou viande</p>
+            <p class="price">500 FCFA</p>
+            <button>Ajouter au panier</button>
+          </div>
+        </div>
+        <div class="menu-item">
+          <img
+            src="images/Easy Bolognese Sauce (No Wine) - My Gorgeous Recipes.jpeg"
+            alt="Aloko"
+          />
+          <div class="item-details">
+            <h3>Aloko</h3>
+            <p>Banane plantain frit avec sauce pimentée</p>
+            <p class="price">400 FCFA</p>
+            <button>Ajouter au panier</button>
+          </div>
+        </div>
+        <!-- Apres j'ajouter d'autres plats principaux ici -->
+      </div>
+
+      <div class="menu-category">
+        <h2>Accompagnements</h2>
+        <div class="menu-item">
+          <img
+            src="images/🤌🏼.jpeg"
+            alt="Frites"
+          />
+          <div class="item-details">
+            <h3>Frites</h3>
+            <p>Frites croustillantes accompagnées de sauce</p>
+            <p class="price">300 FCFA</p>
+            <button>Ajouter au panier</button>
+          </div>
+        </div>
+        <!-- Apres j'ajoute d'autres accompagnements ici -->
+      </div>
+
+      <div class="menu-category">
+        <h2>Boissons</h2>
+        <div class="menu-item">
+          <img src="images/Aesthetic picture canette.jpeg" alt="Boisson" />
+          <div class="item-details">
+            <h3>Boisson fraîche</h3>
+            <p>Boisson gazeuse ou jus de fruits</p>
+            <p class="price">150 FCFA</p>
+            <button>Ajouter au panier</button>
+          </div>
+        </div>
+        <!-- Apres j'ajouter d'autres boissons ici -->
+      </div>
+    </section>
+  </body>
+</html>

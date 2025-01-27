@@ -157,5 +157,38 @@
         <!-- Apres j'ajouter d'autres boissons ici -->
       </div>
     </section>
+
+
+    
+    <script>
+      // Sélectionne les éléments nécessaires
+const cartItems = document.getElementById("cart-items");
+const cartTotal = document.getElementById("cart-total");
+let total = 0;
+
+// Fonction pour ajouter un article au panier
+function addToCart(name, price) {
+    // Crée un nouvel élément pour le panier
+    const listItem = document.createElement("li");
+    listItem.textContent = `${name} - ${price} FCFA`;
+    cartItems.appendChild(listItem);
+
+    // Met à jour le total
+    total += parseInt(price);
+    cartTotal.textContent = total;
+}
+
+// Ajoute des écouteurs d'événements aux boutons
+const buttons = document.querySelectorAll(".add-to-cart");
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const name = button.getAttribute("data-name");
+        const price = button.getAttribute("data-price");
+        addToCart(name, price);
+    });
+});
+
+
+    </script>
   </body>
 </html>
